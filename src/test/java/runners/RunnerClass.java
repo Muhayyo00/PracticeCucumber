@@ -17,8 +17,8 @@ import org.junit.runner.RunWith;
         //dryRun=true-->scans all the step definitions and provides what step definition is missing
         //dryRun=false-->executes the codes
         dryRun=false,
-        tags="@regression",
-        plugin="pretty"
+        tags="@sprint1",
+        plugin={"pretty"}
 )
 
 public class RunnerClass {
