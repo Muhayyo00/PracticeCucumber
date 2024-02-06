@@ -66,18 +66,13 @@ public class CommonMethods {
         waitForElementToBeClickAble(element);
         element.click();
     }
-
     public JavascriptExecutor getJSExecutor(){
         JavascriptExecutor js=(JavascriptExecutor) driver;
         return js;
     }
-
     public void jsClick(WebElement element){
         getJSExecutor().executeScript("arguments[0].click();",element);
     }
-
-
-
 
 }
 

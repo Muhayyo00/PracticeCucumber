@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         //dryRun=true-->scans all the step definitions and provides what step definition is missing
         //dryRun=false-->executes the codes
         dryRun=false,
-        tags="@sprint1",
+        tags="@sprint3",
         plugin={"pretty"}
 )
 

@@ -24,10 +24,10 @@ public class LoginSteps extends CommonMethods {
         //1.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }
-    @When("the user enters admin username and password")
-    public void the_user_enters_admin_username_and_password() {
-        WebElement usernameField=driver.findElement(By.xpath("//input[@id='txtUsername']"));
-        WebElement passwordField=driver.findElement(By.xpath("//input[@id='txtPassword']"));
+    @When("user enters admin username and password")
+    public void user_enters_admin_username_and_password() {
+        WebElement usernameField=driver.findElement(By.xpath("//*[@id='txtUsername']"));
+        WebElement passwordField=driver.findElement(By.xpath("//*[@id='txtPassword']"));
         sendText(ConfigReader.read("userName"),usernameField);
         sendText(ConfigReader.read("password"), passwordField);
        //1. driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("admin");
